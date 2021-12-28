@@ -1,3 +1,5 @@
+require "language/node"
+
 class Codenav < Formula
   desc "Easing up code navigation between repos"
   homepage "https://github.com/viqueen/codenav"
