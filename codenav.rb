@@ -5,7 +5,7 @@ class Codenav < Formula
   sha256 "07a7f0c3894a5baa6fcaed4193a0e698acc934731aa183713b2c173907f2b2a3"
   license "Apache-2.0"
 
-  depends_on "node"
+  depends_on "node@17"
 
   def install
     system "npm", "install", *Language::Node.std_npm_install_args(libexec)
