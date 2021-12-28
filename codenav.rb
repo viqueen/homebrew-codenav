@@ -1,21 +1,19 @@
 require "language/node"
 
 class Codenav < Formula
-  desc "Easing up code navigation between repos"
+  desc "Easing up code navigation between repos."
   homepage "https://github.com/viqueen/codenav"
-  url "https://github.com/viqueen/codenav/archive/refs/tags/2.0.0.tar.gz"
-  sha256 "07a7f0c3894a5baa6fcaed4193a0e698acc934731aa183713b2c173907f2b2a3"
+  url "https://registry.npmjs.org/codenav/-/codenav-2.0.0.tgz"
+  sha256 "88622d477b45a62369a50e0a691597d394dc5539948fbf0a03a0d08b79111102"
   license "Apache-2.0"
 
-  depends_on "node@17"
+  depends_on "node"
 
   def install
     system "npm", "install", *Language::Node.std_npm_install_args(libexec)
-    system "npm", "run", "ci:build", *Language::Node.std_npm_install_args(libexec)
-#     bin.install_symlink Dir["#{libexec}/bin/*"]
   end
 
   test do
-    raise "test not implemented"
+   system "false"
   end
 end
