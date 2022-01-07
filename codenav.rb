@@ -3,8 +3,8 @@ require "language/node"
 class Codenav < Formula
   desc "Easing up code navigation between repos."
   homepage "https://github.com/viqueen/codenav"
-  url "https://registry.npmjs.org/codenav/-/codenav-2.1.0.tgz"
-  sha256 "b5f8c5f2dcb729adfe191f811c123efef6b672fe1a3863e93a0940deab201928"
+  url "https://registry.npmjs.org/codenav/-/codenav-2.2.0.tgz"
+  sha256 "77b559098df51cfd457df0e33f03c0a39f6c7cae7e3a894b3acd197ed5eb10a9"
   license "Apache-2.0"
 
   depends_on "node"
